@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp" >
+
+    <TextView
+        android:id="@+id/tNomeDevice"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#eeeeee" />
+
+    <EditText
+        android:id="@+id/tMsg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="text"
+        android:visibility="gone"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btConectar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/conectar" />
+        <Button
+            android:id="@+id/btEnviar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/enviar"
+            android:enabled="false"
+            android:visibility="gone"/>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_velocidade"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Velocidade: "/>
+
+    <TextView
+        android:id="@+id/tv_temperatura"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Temperatura: "/>
+
+    <TextView
+        android:id="@+id/tv_rotacao"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Rotação: "/>
+
+    <TextView
+        android:id="@+id/tv_posicaoborb"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Posição da borboleta: "/>
+
+    <TextView
+        android:id="@+id/tv_fluxoar"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Fluxo de ar: "/>
+
+</LinearLayout>
